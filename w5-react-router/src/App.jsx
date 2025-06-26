@@ -1,25 +1,34 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router";
-
+import "./App.css";
 import Home from "./Home";
 import About from "./About";
 import Notfound from "./Notfound";
 import Detail from "./Detail";
+
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/about"}>about</Link>
-        <Link to={"/Notfound"}>Notfound</Link>
-        <Link to={"/Detail"}>Detail</Link>
+    <div className="app-container">
+      <nav className="navbar">
+        <Link className="nav-link" to="/">
+          Home
+        </Link>
+        <Link className="nav-link" to="/about">
+          About
+        </Link>
+        <Link className="nav-link" to="/detail">
+          Detail
+        </Link>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Notfound />} />
-        <Route path="/Detail" element={<Detail />} />
-      </Routes>
+
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/detail" element={<Detail />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -1,36 +1,48 @@
 import React from "react";
+import "./About.css";
 
 function About() {
   return (
-    <div>
-      <h1>ABOUT</h1>
-      <div>
-        <center>
+    <div className="about-container">
+      <h1 className="about-title">ABOUT</h1>
+
+      <div className="about-content">
+        <div className="about-banner">
           <img
-            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2832330/ss_d2149ba89a7b0ab396ce16a01ed8691930a6c35b.600x338.jpg?t=1748595494"
-            alt=""
-            width={980}
+            src="https://t3.ftcdn.net/jpg/07/32/10/90/360_F_732109080_4lXwGofazqAiysUpcCnrbflsNOl9EMdW.jpg"
+            alt="Banner"
+            className="banner-image"
+            width={123}
           />
-        </center>
-        <center>
+        </div>
+
+        <div className="about-description">
+          <h2>เว็บไซต์นี้สร้างมาเพื่อขายมังงะต่างๆ</h2>
           <h2>
-            Aeons Echo is a Captivating RPG Adventure Set in a Visually Stunning
-            Universe Enter a world of lewd adventure, rich storytelling,
-            beautiful visuals, and completely uncensored art. Aeons Echo
-            combines addictive gameplay with deep emotional connections in one
-            neat package.
+            จะมีมังงะที่มียอดขายเยอะที่สุดประจำสัปดาห์ และมังงะของเรื่องอื่นๆ
+            อีกมากมาย
           </h2>
-          <h2>
-            Aeons Echo คือเกมผจญภัย RPG ที่น่าหลงใหลในจักรวาลที่สวยงามตระการตา
-            เข้าสู่โลกแห่งการผจญภัยที่แสนเร้าใจ เรื่องราวที่เข้มข้น ภาพที่สวยงาม
-            และงานศิลปะที่ไม่มีการเซ็นเซอร์อย่างสมบูรณ์ Aeons Echo
-            ผสมผสานรูปแบบการเล่นที่น่าติดตามเข้ากับความเชื่อมโยงทางอารมณ์ที่ลึกซึ้งในแพ็คเกจเดียว
-          </h2>
-        </center>
-        <img
-          src="https://rule34video.com/contents/videos_screenshots/3304000/3304189/preview_1080p.mp4.jpg"
-          alt=""
-        />
+          <h2>จัดทำโดย นาย โรจนศักดิ์ เดชห้าว</h2>
+        </div>
+
+        <div className="about-gallery">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/f/f7/JoJo_no_Kimyou_na_Bouken_cover_-_vol1.jpg"
+            alt="JoJo"
+          />
+          <img
+            src="https://img.lazcdn.com/g/p/3297c74409854810a4c332003ad12d7c.jpg_360x360q75.jpg_.webp"
+            alt="One Piece"
+          />
+          <img
+            src="https://cdn-local.mebmarket.com/meb/server1/104616/Thumbnail/book_detail_large.gif?3"
+            alt="Manga 3"
+          />
+          <img
+            src="https://cdn-local.mebmarket.com/meb/server1/16275/Thumbnail/book_detail_large.gif?8"
+            alt="Manga 4"
+          />
+        </div>
       </div>
     </div>
   );
